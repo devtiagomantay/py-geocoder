@@ -1,7 +1,7 @@
 import geocoder
+from pprint import pprint
 
 if __name__ == '__main__':
-    print('Oi')
-
-    geo_result = geocoder.osm("Av liberdade. Lisboa. Portugal")
-    print(geo_result.geojson)
+    address = 'Av liberdade. Lisboa. Portugal'
+    geo_result = geocoder.osm(address)
+    pprint(geo_result.geojson)
